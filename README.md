@@ -6,7 +6,7 @@ Sensory Subsystem Initial Research
 
 
 ### Work Completed
-Reviewed the approved project proposal and clarified project requirements. The posture checker must be compact, wearable, low power, and capable of detecting changes in body posture over time.
+Reviewed the approved project proposal and clarified project requirements. The posture checker must be compact, wearable, low power, and capable of detecting changes in body posture over time
 
 Investigated into potential sensing approaches:
 - Inertial Measurement Units (IMUs)
@@ -14,7 +14,7 @@ Investigated into potential sensing approaches:
 - Pressure sensors
 - Tilt switches
 
-Tilt switches were ruled out due to binary output. Pressure sensors were considered unreliable because of inconsistent contact with the body. Flex sensors were considered but noted to be prone to drift and mechanical fatigue.
+Tilt switches were ruled out due to binary output. Pressure sensors were considered unreliable because of inconsistent contact with the body. Flex sensors were considered but noted to be prone to drift and mechanical fatigue
 
 ### Notes
 IMU-based sensing in combination with stretch sensors were considered as the most suitable approach for posture monitoring
@@ -77,7 +77,7 @@ Reviewed ICM-20948 reference schematics. Identified required other components re
 - Voltage regulator for 3.3V and 1.8V supply (Came from power subsystem)
 - Level shifting required to communicate with MCU
 
-Discussed sensor placement to maintain a consistent coordinate frame relative to user posture.
+Discussed sensor placement to maintain a consistent coordinate frame relative to user posture
 
 ### Notes
 Schematic Completed based on datasheet and requirements. 
@@ -96,7 +96,7 @@ Reviewed IMU PCB layout guidelines:
 - Close placement of decoupling capacitors
 - Avoidance of noisy digital signals near sensor
 
-Determined IMU orientation on PCB to align axes with posture directions.
+Determined IMU orientation on PCB to align axes with posture directions
 
 ### Notes
 IMU orientation selected and PCB design completed
@@ -124,16 +124,31 @@ Testing focused on stability and repeatability rather than full accuracy
 ---
 
 ## **Date:** November 11, 2025  
-Sensory Subsystem initial Testing and Debugging  
+Sensory Subsystem initial Testing and Debugging
 
 
 ### Work Completed
 Verified IMU communication with the MCU and confirmed correct device identification. Observed stable accelerometer readings under static conditions.
 
-Simulated posture changes by rotating the device and observing sensor output response.
+Simulated posture changes by rotating the device and observing sensor output response
 
 ### Issues Detected
 Minor noise present in raw data, consistent with expected results and doesnt have a huge impact on the data
+
+---
+
+## **Date:** November 17, 2025  
+Enclosure Design and Mechanical Integration  
+
+
+### Work Completed
+Started initial CAD modeling of the device enclosure. The enclosure was designed to hold the PCB securely while maintaining a compact and wearable form factor suitable for a clip-on posture checker
+
+Key considerations included PCB dimensions, component height clearances, and mounting features to prevent board movement. Openings were added and aligned for the push button and charging port to allow the user to access these features effortlessly
+
+
+### Notes
+Enclosure dimensions and cutout placements finalized to match the PCB layout and ensure proper alignment of the button and charging port
 
 ---
 
